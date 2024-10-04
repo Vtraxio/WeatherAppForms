@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            ListViewItem listViewItem2 = new ListViewItem("");
+            ListViewItem listViewItem1 = new ListViewItem("");
             button1 = new Button();
             update = new Label();
             ApiUpdate = new System.Windows.Forms.Timer(components);
@@ -66,14 +66,14 @@
             // ApiUpdate
             // 
             ApiUpdate.Enabled = true;
-            ApiUpdate.Interval = 10000;
+            ApiUpdate.Interval = 900000;
             ApiUpdate.Tick += ApiUpdate_Tick;
             // 
             // listData
             // 
             listData.Columns.AddRange(new ColumnHeader[] { property, value, Warnings });
             listData.Dock = DockStyle.Fill;
-            listData.Items.AddRange(new ListViewItem[] { listViewItem2 });
+            listData.Items.AddRange(new ListViewItem[] { listViewItem1 });
             listData.Location = new Point(3, 43);
             listData.Name = "listData";
             listData.Size = new Size(794, 404);
@@ -89,6 +89,7 @@
             // value
             // 
             value.Text = "Wartość";
+            value.Width = 120;
             // 
             // Warnings
             // 

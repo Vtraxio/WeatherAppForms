@@ -74,7 +74,7 @@ namespace WeatherAppForms {
 
 			var rain = new ListViewItem("Deszcz");
 			rain.SubItems.Add($"{weather.current.rain}mm");
-			rain.SubItems.Add("Suma w ostani¹ godzinê.");
+			rain.SubItems.Add("Suma w ostatniej godzinie.");
 			listData.Items.Add(rain);
 
 			var status = new ListViewItem("Ogólny stan");
